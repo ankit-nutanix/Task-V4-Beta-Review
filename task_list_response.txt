@@ -1,0 +1,160 @@
+{
+    "$dataItemDiscriminator": "List<prism.v4.config.Task>",
+    "data": [
+        {
+            "extId": "ZXJnb24=:3d67d39e-7b7a-57b3-8ce0-47605c884968",
+            "operation": "CreateVm",
+            "createdTime": "2023-03-14T12:27:02.950216Z",
+            "startedTime": "2023-03-14T12:27:03.029487Z",
+            "completedTime": "2023-03-14T12:27:03.136922Z",
+            "status": "FAILED",
+            "progressPercentage": 100,
+            "entitiesAffected": [
+                {
+                    "extId": "8b22490c-6e7b-429b-653a-c0c6c33b577a",
+                    "rel": "vmm:ahv:vm",
+                    "$reserved": {
+                        "$fqObjectType": "prism.v4.r0.a1.config.EntityReference"
+                    },
+                    "$objectType": "prism.v4.config.EntityReference"
+                }
+            ],
+            "isCancelable": false,
+            "ownedBy": {
+                "extId": "00000000-0000-0000-0000-000000000000",
+                "name": "admin",
+                "$reserved": {
+                    "$fqObjectType": "prism.v4.r0.a1.config.OwnerReference"
+                },
+                "$objectType": "prism.v4.config.OwnerReference"
+            },
+            "errorMessages": [
+                {
+                    "message": "Failed to perform the operation 'CreateVm' on the VM with UUID '8b22490c-6e7b-429b-653a-c0c6c33b577a', as the cluster with UUID '0005f64d-f6ef-108d-0017-b30cebcdd11f' is not registered to PC.",
+                    "severity": "ERROR",
+                    "code": "VMM-30106",
+                    "locale": "en_US",
+                    "errorGroup": "VM_INVALID_ARGUMENT",
+                    "argumentsMap": {
+                        "vm_uuid": "8b22490c-6e7b-429b-653a-c0c6c33b577a",
+                        "cluster_uuid": "0005f64d-f6ef-108d-0017-b30cebcdd11f",
+                        "operation": "CreateVm"
+                    },
+                    "$reserved": {
+                        "$fqObjectType": "prism.v4.r0.a1.error.AppMessage"
+                    },
+                    "$objectType": "prism.v4.error.AppMessage"
+                }
+            ],
+            "lastUpdatedTime": "2023-03-14T12:27:03.136921Z",
+            "$reserved": {
+                "$fqObjectType": "prism.v4.r0.a1.config.Task"
+            },
+            "$objectType": "prism.v4.config.Task"
+        },
+        {
+            "extId": "ZXJnb24=:3f091d1d-04f6-4ed8-4c45-26ed8efb34df",
+            "operation": "OvaCreate",
+            "parentTask": {
+                "href": "https://10.97.112.47:9440/api/prism/v4.0.a1/config/tasks/ZXJnb24=:5ca68871-4978-4b24-5b9d-6876f307f62b",
+                "rel": "parent",
+                "$reserved": {
+                    "$fqObjectType": "prism.v4.r0.a1.config.TaskReferenceInternal"
+                },
+                "$objectType": "prism.v4.config.TaskReferenceInternal",
+                "extId": "ZXJnb24=:5ca68871-4978-4b24-5b9d-6876f307f62b"
+            },
+            "createdTime": "2023-03-09T12:54:07.1525Z",
+            "startedTime": "2023-03-09T12:54:07.317185Z",
+            "completedTime": "2023-03-09T12:54:07.930554Z",
+            "status": "FAILED",
+            "progressPercentage": 100,
+            "isCancelable": false,
+            "errorMessages": [
+                {
+                    "message": "Operation failed due to legacy error and 'legacyErrorMessage' should be referred to for details",
+                    "severity": "ERROR",
+                    "code": "TSKS-20801",
+                    "locale": "en_US",
+                    "errorGroup": "LEGACY_ERROR",
+                    "$reserved": {
+                        "$fqObjectType": "prism.v4.r0.a1.error.AppMessage"
+                    },
+                    "$objectType": "prism.v4.error.AppMessage"
+                }
+            ],
+            "legacyErrorMessage": "Could not access the URL http://endor.dyn.nutanix.com/GoldImages/amf/amf_images/cloudinit/: Range requests not supported by the server",
+            "lastUpdatedTime": "2023-03-09T12:54:07.93055Z",
+            "clusterExtIds": [
+                "0005f64d-f6ef-108d-0017-b30cebcdd11e"
+            ],
+            "$reserved": {
+                "$fqObjectType": "prism.v4.r0.a1.config.Task"
+            },
+            "$objectType": "prism.v4.config.Task"
+        },
+    ],
+    "metadata": {
+        "flags": [
+            {
+                "name": "hasError",
+                "value": false,
+                "$reserved": {
+                    "$fqObjectType": "common.v1.r0.a3.config.Flag"
+                },
+                "$objectType": "common.v1.config.Flag"
+            },
+            {
+                "name": "isPaginated",
+                "value": true,
+                "$reserved": {
+                    "$fqObjectType": "common.v1.r0.a3.config.Flag"
+                },
+                "$objectType": "common.v1.config.Flag"
+            }
+        ],
+        "links": [
+            {
+                "href": "https://10.97.112.47:9440/api/prism/v4.0.a1/config/tasks?$page=0&$limit=100",
+                "rel": "first",
+                "$reserved": {
+                    "$fqObjectType": "common.v1.r0.a3.response.ApiLink"
+                },
+                "$objectType": "common.v1.response.ApiLink"
+            },
+            {
+                "href": "https://10.97.112.47:9440/api/prism/v4.0.a1/config/tasks?$page=0&$limit=100",
+                "rel": "self",
+                "$reserved": {
+                    "$fqObjectType": "common.v1.r0.a3.response.ApiLink"
+                },
+                "$objectType": "common.v1.response.ApiLink"
+            },
+            {
+                "href": "https://10.97.112.47:9440/api/prism/v4.0.a1/config/tasks?$page=1&$limit=100",
+                "rel": "next",
+                "$reserved": {
+                    "$fqObjectType": "common.v1.r0.a3.response.ApiLink"
+                },
+                "$objectType": "common.v1.response.ApiLink"
+            },
+            {
+                "href": "https://10.97.112.47:9440/api/prism/v4.0.a1/config/tasks?$page=93&$limit=100",
+                "rel": "last",
+                "$reserved": {
+                    "$fqObjectType": "common.v1.r0.a3.response.ApiLink"
+                },
+                "$objectType": "common.v1.response.ApiLink"
+            }
+        ],
+        "totalAvailableResults": 9333,
+        "$reserved": {
+            "$fqObjectType": "common.v1.r0.a3.response.ApiResponseMetadata"
+        },
+        "$objectType": "common.v1.response.ApiResponseMetadata"
+    },
+    "$reserved": {
+        "$fqObjectType": "prism.v4.r0.a1.config.TaskListResponse"
+    },
+    "$objectType": "prism.v4.config.TaskListResponse"
+}
